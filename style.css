@@ -1,0 +1,308 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+:root {
+  --Dark: #594545;
+  --Dark-brown: #815B5B;
+  --Light-brown: #9E7676;
+  --Light: #FFF8EA;
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Raleway";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+
+body {
+  background: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1900px 1150px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+/* main */
+main {
+  text-align: center;
+}
+#slogan {
+  font-size: 50px;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+.border-radius {
+  border-radius: 20px;
+}
+
+#sortiment {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--Dark);
+  color: white;
+}
+#sortimentSpodek {
+  height: 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--Dark);
+}
+
+@media only screen and (min-width:701px) {
+  #aboutus {
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #myCarousel {
+    width: 60%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #sortiment, #sortimentSpodek {
+    width: 60%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  #aboutus {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #myCarousel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #sortiment,#sortimentSpodek {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
+
+
+article {
+  text-align: justify;
+  background-color: var(--Light-brown);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+a {
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--Dark);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Logos */
+#logo {
+  margin-right: 20px;
+  height: 40px;
+  width: 27px;
+}
+
+#biglogo {
+  height: 400px;
+}
+
+/* Navigation */
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#navLogo {
+  display: flex;
+}
+
+.top-nav {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Dark-brown);
+  background: linear-gradient(to left, var(--Dark), var(--Light-brown));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 700px) {
+  body {
+    background: url("bgmobile.jpg");
+    background-size: 750px 950px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle:checked~.menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: var(--Dark);
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
