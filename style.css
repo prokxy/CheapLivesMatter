@@ -17,7 +17,7 @@
 
 
 body {
-  background: url("background.jpg");
+  background: url("img/bgpc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 1900px 1150px;
@@ -27,6 +27,10 @@ body {
 
 
 /* main */
+#blackandwhite {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 main {
   text-align: center;
 }
@@ -76,14 +80,14 @@ h3 {
 
   #myCarousel {
     width: 60%;
-    max-width: 500px;
+    /* max-width: 500px; */
     margin-left: auto;
     margin-right: auto;
   }
 
   #sortiment, #sortimentSpodek {
     width: 60%;
-    max-width: 500px;
+    /* max-width: 500px; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -257,7 +261,7 @@ body {
 
 @media (max-width: 700px) {
   body {
-    background: url("bgmobile.jpg");
+    background: url("img/bgmobile.jpg");
     background-size: 750px 950px;
     background-repeat: no-repeat;
     background-attachment: fixed;

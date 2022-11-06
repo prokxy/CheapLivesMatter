@@ -1,3 +1,3 @@
 # CheapLivesMatter
-school team project 
-Cheap work website
+School team project
+## Cheap labor site
