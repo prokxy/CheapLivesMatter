@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
 :root {
   --Dark: #594545;
   --Dark-brown: #815B5B;
@@ -44,6 +44,8 @@ h1 {
 h3 {
   color: white;
   text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .border-radius {
