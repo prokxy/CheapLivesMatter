@@ -20,7 +20,7 @@ body {
   background: url("img/bgpc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 1900px 1150px;
+  /*background-size: 1900px 1150px;*/
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
@@ -262,7 +262,9 @@ body {
 @media (max-width: 700px) {
   body {
     background: url("img/bgmobile.jpg");
-    background-size: 750px 950px;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -80px;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
